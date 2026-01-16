@@ -1,0 +1,202 @@
+
+@import url('../../.cache/wal/colors-waybar.css');
+* {
+    font-size:15px;
+    font-family: "JetBrainMono Nerd Font";
+}
+window#waybar{
+    background:transparent;
+}
+.modules-left,
+.modules-center,
+.modules-right {
+    background-color: @background;
+    border-radius:50px;
+    padding: 0 6px;
+    margin: 2px 0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.15);
+}
+
+.modules-left {
+    margin-left: 2px;
+    padding-left: 3px;
+}
+
+.modules-right {
+    margin-right: 2px;
+    padding-right: 3px;
+}
+
+/*
+Modules parts
+*/
+
+tooltip {
+    background:@background;
+    color: @color7;
+}
+#clock:hover, #custom-pacman:hover, #custom-notification:hover,#bluetooth:hover,#network:hover,#battery:hover, #cpu:hover,#memory:hover,#temperature:hover{
+    transition: all .3s ease;
+    color:@color6;
+}
+#custom-notification {
+    padding: 0px 5px 0px 10px;
+    transition: all .3s ease;
+    color:@color7;
+}
+#clock{
+    padding: 0px 5px;
+    color:@color7;
+    transition: all .3s ease;
+}
+#custom-launcher
+{
+    padding: 0 10px;
+    color: @color6;
+    border-radius: 10px;
+    margin-left: 2px;
+    margin-right: 4px;
+    font-size: 16px;
+}
+#custom-launcher:hover{
+    color: @color4;
+}
+#window{
+    color: @color4;
+}
+#workspaces {
+    padding: 7px 4px;
+}
+#workspaces button {
+    all:unset;
+    padding: 0px 10px;
+    color: alpha(@color9,0.8);
+    min-width: 22px;
+    min-height: 22px;
+    font-size: 11px;
+    font-weight: 500;
+    transition: all .2s ease;
+}
+#workspaces button:hover {
+    color:alpha(@color4,0.8);
+    border: none;
+    text-shadow: 0px 0px 1.5px rgba(0, 0, 0, .5);
+    transition: all 1s ease;
+}
+#workspaces button.active {
+    color: @color4;
+    border: none;
+    text-shadow: 0px 0px 2px rgba(0, 0, 0, .5);
+    background: @color0 ;
+    border-radius: 20px;
+}
+#workspaces button.empty {
+    color: alpha(@color7,0.8);
+    border: none;
+    text-shadow: 0px 0px 1.5px rgba(0, 0, 0, .2);
+}
+#workspaces button.empty:hover {
+    color: alpha(@color4,0.8);
+    border: none;
+    text-shadow: 0px 0px 1.5px rgba(0, 0, 0, .5);
+    transition: all 1s ease;
+}
+#workspaces button.empty.active {
+    color: @color4;
+    border: none;
+    text-shadow: 0px 0px 2px rgba(0, 0, 0, .5);
+}
+#window {
+    padding: 0px 10px;
+    color: @color9;
+}
+#bluetooth,
+#custom-power,
+#custom-separator,
+#custom-separator-2,
+#network,#cpu,
+#memory,
+#temperature,
+#custom-pacman,
+#custom-pomodoro
+{
+    padding: 0 10px;
+    margin: 2px 2px;
+    border-radius: 8px;
+    background: transparent;
+}
+#wireplumber{
+    padding: 2px 5px;
+    transition: all .3s ease-in-out;
+    color:@color7;
+}
+#bluetooth{
+    padding: 0px 5px;
+    transition: all .3s ease;
+    color:@color7;
+
+}
+#network{
+    padding: 0px 5px;
+    transition: all .3s ease;
+    color:@color7;
+
+}
+#group-expand{
+    padding: 0px 5px;
+    transition: all .3s ease; 
+}
+#custom-expand{
+    padding: 0px 5px;
+    color:alpha(@foreground,.2);
+    text-shadow: 0px 0px 2px rgba(0, 0, 0, .7);
+    transition: all .3s ease; 
+}
+#custom-expand:hover{
+    color:rgba(255,255,255,.2);
+    text-shadow: 0px 0px 2px rgba(255, 255, 255, .5);
+}
+#custom-colorpicker{
+    padding: 0px 5px;
+}
+#group-hardware {
+    border-radius: 10px;
+    padding: 0 2px;
+    margin: 2px 2px;
+}
+#cpu,
+#memory,
+#disk,
+#temperature {
+    padding: 0 4px; /* Reduced from 8px */
+    font-size: 11px;
+    color: @color7;
+}
+#custom-endpoint{
+    color:transparent;
+    text-shadow: 0px 0px 1.5px rgba(0, 0, 0, 1);
+
+}
+#tray{
+    padding: 0px 5px;
+    transition: all .3s ease; 
+
+}
+#tray menu * {
+    padding: 0px 5px;
+    transition: all .3s ease; 
+}
+
+#tray menu separator {
+    padding: 0px 5px;
+    transition: all .3s ease; 
+}
+
+#custom-separator,
+#custom-separator-2 {
+    color: @color4;
+    font-size: 12px;
+    padding: 0 2px;
+    margin: 3px 0;
+    opacity: 0.4;
+}
